@@ -1,13 +1,5 @@
-body {
-    background-color: lightblue;
-        font-variant: small-caps;
-}
-
-h1 {
-    color: navy;
-    margin-left: 20px;
-}
-
 p {
 	color: orange;
+  text-decoration: line-through;
+
 }

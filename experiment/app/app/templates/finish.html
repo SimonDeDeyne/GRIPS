@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='img/favicon.ico') }}">
+    <title>Finish</title>
+    <!-- Bootstrap core CSS -->
+    <link href={{ url_for('static', filename='css/lib/bootstrap/bootstrap.min.css') }} rel="stylesheet">
+    <link href={{ url_for('static', filename='css/sticky-footer-navbar.css') }} rel="stylesheet">
+  </head>
+  <body>
+    <!-- Begin page content -->
+    <main role="main" class="container">
+      <div class="row justify-content-center">
+        <div class="col-10">
+          <h1 class="mt-5">Thank you</h1>
+          <hr>
+          <br>
+          <p class='text-center'>
+            <img class="" src={{ url_for('static', filename='img/thankyou2.jpg')}} alt="Black Metal Vegan Chef">
+          </p>
+          <p class='lead text-center'>
+            You can now close the browser window.
+          </p>
+          <hr>
+        </div>
+      </main>
+      <footer class="footer">
+        <div class="container">
+          <span class="text-muted">Last updated 5 May 2018</span>
+        </div>
+      </footer>
+      <!-- Bootstrap core JavaScript
+      ================================================== -->
+      <!-- Placed at the end of the document so the pages load faster -->
+      <script src={{ url_for('static', filename='js/lib/jquery/jquery-3.3.1.min.js') }}></script>
+      <script src={{ url_for('static', filename='js/lib/popper.min.js') }}></script>
+      <script src={{ url_for('static', filename='js/lib/bootstrap/bootstrap.min.js') }}></script>
+    </body>
+  </html>

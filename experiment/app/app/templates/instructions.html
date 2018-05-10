@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='img/favicon.ico') }}">
+    <title>Instructions</title>
+    <!-- Bootstrap core CSS -->
+    <link href={{ url_for('static', filename='css/lib/bootstrap/bootstrap.min.css') }} rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href={{ url_for('static', filename='css/sticky-footer-navbar.css') }} rel="stylesheet">
+  </head>
+  <body>
+    <!-- Begin page content -->
+    <main role="main" class="container">
+      <div class="row justify-content-center">
+        <div class="col-8">
+          <h1 class="mt-5">Instructions</h1>
+          <hr>
+          <p class="lead text-justify">Welcome to this awesome experiment where we will ask you some trivial questions and change the world.
+          
+          You will see a series of words or images.<br><br>
+          Please indicate how evil or nice each image is by selecting one of 5 options on the following scale:
+          [INSERT SCREENSHOT OF SCALE HERE]          
+        </p>
+
+          <div class='d-flex justify-content-center'>
+            <a class="btn btn=lg btn-outline-dark" href="{{url_for('experiment')}}" role="button">Proceed</a>
+          </div>
+
+
+          <hr>
+        </div>
+      </div>
+    </div>
+    <!-- <p>Please select the conset box</p> -->
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src={{ url_for('static', filename='js/lib/jquery/jquery-3.3.1.min.js') }}></script>
+    <script src={{ url_for('static', filename='js/lib/popper.min.js') }}></script>
+    <script src={{ url_for('static', filename='js/lib/bootstrap/bootstrap.min.js') }}></script>
+  </body>
+</html>

@@ -1,0 +1,102 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <link rel="shortcut icon" href="{{ url_for('static', filename='img/favicon.ico') }}">
+    <title>Introduction</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href={{ url_for('static', filename='css/lib/bootstrap/bootstrap.min.css') }} rel="stylesheet">
+
+  </head>
+
+  <body>
+
+
+  <!-- Begin page content -->
+  <main role="main" class="container">
+  <div class="row justify-content-md-center">
+  <div class="col-md-8">
+      <h1 class="mt-5">Introduction</h1>
+      <hr>
+      <p class="lead">Welcome to this awesome experiment where we will ask you some trivial questions and change the world.</p>
+      <br>
+      
+
+
+
+
+<h4>Before we get started please take note:</h4>
+ <ul>
+  <li>This study is suitable for laptops and desktop computers only and is designed to work with a recent browser.</li>
+  <li>Press the "open study in new window" button and maximize the browser window (press <code>F11</code>).</li>
+ </ul>
+
+<br>
+
+<div class="alert alert-warning" role="alert">
+<h4>If you want to participate, we need your consent</h4>
+
+
+<p style = 'text-align: justify;'>I consent to participate in this session, which will involve describing how two words are related.<br>
+ I understand that all data will be kept confidential by the researcher. 
+My personal information will not be stored with the data.
+I am free to withdraw at any time without giving a reason.</p>
+ 
+<p style = 'text-align: justify;'>I consent to the publication of study results as long as the information is anonymous so that no identification of participants can be made. 
+ The study has received approval from the Research Ethics Committee of the University of Melbourne. </p>
+<p>If you agree with this, please press the button below.</p>
+</div>
+
+<!-- <div class="form-group">
+  <div class="checkbox">                 
+    <label>
+        <input type="checkbox" value="yes" name='consentCheck' id="consentCheck"/>
+        I have read and understand the explanations and I voluntarily consent to participate in this study.
+    </label>
+  </div>
+</div>
+-->
+
+<div class='d-flex justify-content-center'>
+<!-- <button type='submit' class='btn btn-lg btn-primary'>Proceed</button> -->
+<a class="btn btn=lg btn-outline-dark" href="{{url_for('profile')}}" role="button">Proceed</a>
+</div>
+
+
+<br>
+
+    <hr>
+    <br>
+    <ul class="list-unstyled">
+      <li class="media">
+        <img class="mr-3" src={{ url_for('static', filename='img/UoM_logo.png')}} alt="Logo University of Melbourne" width = "100px">
+        <div class="media-body">
+          <h5 class="mt-0 mb-1">Melbourne School of Psychological Sciences</h5>
+          <h6><a href=''>Computational Cognitive Science Lab</a></h6>
+          <p>A/Prof. Amy Perfors<br>
+          Dr. Simon De Deyne</p>
+        </div>
+      </li>
+    </ul>
+</div>
+    </main>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src={{ url_for('static', filename='js/lib/jquery/jquery-3.3.1.min.js') }}></script>
+    <script src={{ url_for('static', filename='js/lib/popper.min.js') }}></script>
+    <script src={{ url_for('static', filename='js/lib/bootstrap/bootstrap.min.js') }}></script>
+    <script type="text/javascript">
+      
+
+    </script>
+  </body>
+</html>
