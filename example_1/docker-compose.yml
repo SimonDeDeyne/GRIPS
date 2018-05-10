@@ -1,0 +1,8 @@
+version: '2'
+
+services:
+  hello_world:   
+    container_name: nginx_helloworld_ex1
+    build: .
+    ports:
+     - "80:80"  
