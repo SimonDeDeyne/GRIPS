@@ -51,12 +51,26 @@ For older versions of windows you can try [Docker toolbox](https://docs.docker.c
 
 ### Setting up SSH keys
 The following instructions will help you setting up SSH keys to access your server on [Digital Ocean](https://www.digitalocean.com)
-The instructions for [Windows](https://www.digitalocean.com/community/tutorials/how-to-use-ssh-keys-with-putty-on-digitalocean-droplets-windows-users) explains how to set up the keys with [PuTTY and PuTTY-gen](http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html).
+The instructions for [Windows](https://www.digitalocean.com/community/tutorials/how-to-use-ssh-keys-with-putty-on-digitalocean-droplets-windows-users) explains how to set up the keys with [PuTTY and PuTTY-gen](http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html). The procedure of Mac is quite simple, and is explained on [this page](https://www.digitalocean.com/community/tutorials/how-to-use-ssh-keys-with-digitalocean-droplets
+).
+
+
 
 
 To use SSH on Windows there are a couple of options. Recent versions of Windows 10 would allow you to do this easily by
 enabling a [feature in the settings](https://www.howtogeek.com/336775/how-to-enable-and-use-windows-10s-built-in-ssh-commands/
-) to use built-in SSH commands.
+) to use built-in SSH commands. Alternatively, you might have git-bash installed, which would allow you to this from the command line or
+you can use the Digital Ocean console to ssh in.
+
+
+### Uploading your files to the server
+This is straightforward on Linux and Mac, using commands like rsync. For Windows there are a couple of other options.
+One of them is using SFTP and [FileZilla](https://filezilla-project.org/).  This will also require you to enter your private key into Filezilla to set up a secure connection. The steps are outlines in this [Digital Ocean tutorial](https://www.digitalocean.com/community/tutorials/how-to-use-filezilla-to-transfer-and-manage-files-securely-on-your-vps).
+
+If rsync is installed, you can do
+```Shell
+rsync -r -e ssh ./experiment root@[DROPLET-IP]:~/
+```
 
 
 
