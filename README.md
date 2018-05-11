@@ -19,18 +19,44 @@ This repository contains a few simple examples on how to use Docker to develop s
 
 ### Details
 This experiment requires on following components:
-Server-side:
+
+Server-side
 * [Python flask](http://flask.pocoo.org/): simple webserver
 * [SQLITE3](https://www.sqlite.org/index.html): simplest SQL server in the world
 
-Client-side:
+Client-side
 * [Bootstrap 4.1](https://getbootstrap.com/): response pages and pretty components
 * [jQuery](https://jquery.com/): Javascript utilities: selectors, AJAX requests
 * [Slider Pips](http://simeydotme.github.io/jQuery-ui-Slider-Pips/): Pretty sliders
 
 
 In addition we are loading a couple of flask extensions. 
+
 These can be easily imported from a file [requirements.txt](/experiment/requirements.txt)
  and are read by [docker-compose.yml](/experiment/docker-compose.yml).
+
+### Other resources
+#### Docker
+[Windows 10](https://docs.docker.com/docker-for-windows/install/). 
+Current version runs on 64bit Windows 10 Pro, Enterprise and Education (1607 Anniversary Update, Build 14393 or later).
+Make sure Hyper-V is running and virtualization is enabled in the BIOS.
+For older versions of windows you can try [Docker toolbox](https://docs.docker.com/toolbox/toolbox_install_windows/
+).
+
+[Mac](https://docs.docker.com/docker-for-mac/install/). 
+This requires a recent Mac (2010 - ).At a minimum, Docker for Mac requires macOS Yosemite 10.10.3 or newer, with the caveat that going forward 10.10.x is a use-at-your-own risk proposition. VirtualBox prior to version 4.3.30 must NOT be installed (it is incompatible with Docker for Mac). If you have a newer version of VirtualBox installed, it’s fine.
+For older versions of windows you can try [Docker toolbox](https://docs.docker.com/toolbox/toolbox_install_mac/
+).
+
+
+### Setting up SSH keys
+The following instructions will help you setting up SSH keys to access your server on [Digital Ocean](https://www.digitalocean.com)
+The instructions for [Windows](https://www.digitalocean.com/community/tutorials/how-to-use-ssh-keys-with-putty-on-digitalocean-droplets-windows-users) explains how to set up the keys with [PuTTY and PuTTY-gen](http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html).
+
+
+To use SSH on Windows there are a couple of options. Recent versions of Windows 10 would allow you to do this easily by
+enabling a [feature in the settings](https://www.howtogeek.com/336775/how-to-enable-and-use-windows-10s-built-in-ssh-commands/
+) to use built-in SSH commands.
+
 
 
