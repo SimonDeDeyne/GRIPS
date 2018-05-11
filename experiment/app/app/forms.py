@@ -9,6 +9,3 @@ class ProfileForm(FlaskForm):
     language = SelectField('Language', choices = [(0,'Choose your native language'),('En','English'),('X','Other')],validators=[DataRequired()])
     submit = SubmitField('Proceed')    
 
-
-# class ExperimentForm(FlaskForm):
-#     submit = SubmitField('Proceed')    

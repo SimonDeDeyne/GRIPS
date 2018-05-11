@@ -20,9 +20,17 @@ This repository contains a few simple examples on how to use Docker to develop s
 ### Details
 This experiment requires on following components:
 Server-side:
-* Python flask
+* [Python flask](http://flask.pocoo.org/): simple webserver
+* [SQLITE3](https://www.sqlite.org/index.html): simplest SQL server in the world
+
+Client-side:
+* [Bootstrap 4.1](https://getbootstrap.com/): response pages and pretty components
+* [jQuery](https://jquery.com/): Javascript utilities: selectors, AJAX requests
+* [Slider Pips](http://simeydotme.github.io/jQuery-ui-Slider-Pips/): Pretty sliders
 
 
 In addition we are loading a couple of flask extensions. 
 These can be easily imported from a file [requirements.txt](/experiment/requirements.txt)
  and are read by [docker-compose.yml](/experiment/docker-compose.yml).
+
+
