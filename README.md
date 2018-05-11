@@ -48,6 +48,9 @@ This requires a recent Mac (2010 - ).At a minimum, Docker for Mac requires macOS
 For older versions of windows you can try [Docker toolbox](https://docs.docker.com/toolbox/toolbox_install_mac/
 ).
 
+### Digital Ocean
+If you would like to try this out on Digital Ocean, sign up using this [link](https://m.do.co/c/3c36249270c6). It will give you 10$ credit, and I'll get rewarded with credit as well for every person who signs up.
+
 
 ### Setting up SSH keys
 The following instructions will help you setting up SSH keys to access your server on [Digital Ocean](https://www.digitalocean.com)
