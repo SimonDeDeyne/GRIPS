@@ -37,6 +37,8 @@ These can be easily imported from a file [requirements.txt](/experiment/requirem
 
 ### Other resources
 #### Docker
+There's an excellent github with a [Docker Cheat Sheet](https://github.com/wsargent/docker-cheat-sheet) explaining all the useful bits. Below you'll also find some tips for installing docker.
+
 [Windows 10](https://docs.docker.com/docker-for-windows/install/). 
 Current version runs on 64bit Windows 10 Pro, Enterprise and Education (1607 Anniversary Update, Build 14393 or later).
 Make sure Hyper-V is running and virtualization is enabled in the BIOS.
@@ -58,8 +60,6 @@ The instructions for [Windows](https://www.digitalocean.com/community/tutorials/
 ).
 
 
-
-
 To use SSH on Windows there are a couple of options. Recent versions of Windows 10 would allow you to do this easily by
 enabling a [feature in the settings](https://www.howtogeek.com/336775/how-to-enable-and-use-windows-10s-built-in-ssh-commands/
 ) to use built-in SSH commands. Alternatively, you might have git-bash installed, which would allow you to this from the command line or
@@ -74,6 +74,4 @@ If rsync is installed, you can do
 ```Shell
 rsync -r -e ssh ./experiment root@[DROPLET-IP]:~/
 ```
-
-
 
